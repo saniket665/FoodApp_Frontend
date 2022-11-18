@@ -27,10 +27,10 @@ function Plans() {
             <div className='planDetails'>
                 {arr && arr?.map((ele, key) =>
                     <div className='pCard' key={key}>
-                        <h3 className='h3'>{ele.name}</h3>
+                        <h3 className='h3'>{ele?.name}</h3>
                         <div className='pCard1'>
                             <div className='priceBox'>
-                                <div className='price'>Rs {ele.price}</div>
+                                <div className='price'>Rs {ele?.price}</div>
                                 <div className="duration">/month</div>
                             </div>
                             <p className="point">That’s only 2₹ per meal</p>
@@ -39,15 +39,15 @@ function Plans() {
                         <div className='pCard2'>
                             <div className='ppoints'>
                                 <img src={Tick} alt='' className='img' />
-                                <p className='point'>{ele.duration} meal every day</p>
+                                <p className='point'>{ele?.duration} meal every day</p>
                             </div>
                             <div className='ppoints'>
                                 <img src={Tick} alt='' className='img' />
-                                <p className='point'>{ele.discount} discount available.</p>
+                                <p className='point'>{ele?.discount} discount available.</p>
                             </div>
                             <div className='ppoints'>
                                 <img src={Tick} alt='' className='img' />
-                                <p className='point'>{ele.ratingsAverage} rated meal.</p>
+                                <p className='point'>{ele?.ratingsAverage} rated meal.</p>
                             </div>
                         </div>
                         <button className='btn'>I'm Hungry</button>
